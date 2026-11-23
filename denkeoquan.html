@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đèn kéo quân - Bài tập 24</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #172b4d, #376c9b);
+            color: white;
+            text-align: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            padding-top: 25px;
+        }
+
+        p {
+            padding: 0 15px;
+        }
+
+        .stage {
+            width: 300px;
+            height: 300px;
+            margin: 80px auto 45px;
+            perspective: 1000px;
+        }
+
+        .lantern {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            animation: quay 12s linear infinite;
+        }
+
+        .lantern:hover {
+            animation-play-state: paused;
+        }
+
+        .face {
+            position: absolute;
+            width: 170px;
+            height: 230px;
+            left: 65px;
+            top: 35px;
+            border: 4px solid #ffd166;
+            border-radius: 10px;
+            overflow: hidden;
+            background: #fff;
+            cursor: pointer;
+            backface-visibility: hidden;
+            box-shadow: 0 0 15px #ffd166;
+        }
+
+        .face img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .face:nth-child(1) {
+            transform: rotateY(0deg) translateZ(147px);
+        }
+
+        .face:nth-child(2) {
+            transform: rotateY(60deg) translateZ(147px);
+        }
+
+        .face:nth-child(3) {
+            transform: rotateY(120deg) translateZ(147px);
+        }
+
+        .face:nth-child(4) {
+            transform: rotateY(180deg) translateZ(147px);
+        }
+
+        .face:nth-child(5) {
+            transform: rotateY(240deg) translateZ(147px);
+        }
+
+        .face:nth-child(6) {
+            transform: rotateY(300deg) translateZ(147px);
+        }
+
+        @keyframes quay {
+            from {
+                transform: rotateY(0deg);
+            }
+
+            to {
+                transform: rotateY(360deg);
+            }
+        }
+
+        .note {
+            margin: 20px;
+            color: #ffe5a5;
+        }
+
+        .back {
+            display: inline-block;
+            margin: 20px;
+            padding: 12px 25px;
+            background: #ffd166;
+            color: #26364a;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .back:hover {
+            background: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>ĐÈN KÉO QUÂN</h1>
+
+    <p>Hiệu ứng đèn kéo quân với 6 hình ảnh cá nhân</p>
+
+    <div class="stage">
+        <div class="lantern">
+
+            <div class="face">
+                <img src="image/project1.jpg" alt="Hình ảnh 1">
+            </div>
+
+            <div class="face">
+                <img src="image/project2.jpg" alt="Hình ảnh 2">
+            </div>
+
+            <div class="face">
+                <img src="image/project3.jpg" alt="Hình ảnh 3">
+            </div>
+
+            <div class="face">
+                <img src="image/project4.jpg" alt="Hình ảnh 4">
+            </div>
+
+            <div class="face">
+                <img src="image/project5.jpg" alt="Hình ảnh 5">
+            </div>
+
+            <div class="face">
+                <img src="image/project6.jpg" alt="Hình ảnh 6">
+            </div>
+
+        </div>
+    </div>
+
+    <p class="note">
+        Di chuyển chuột vào đèn để tạm dừng.
+        Rê chuột ra ngoài để đèn tiếp tục quay.
+    </p>
+
+    <a class="back" href="index.html">Quay về trang chủ</a>
+
+</body>
+</html>

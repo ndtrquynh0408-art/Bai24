@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Trúc Quỳnh</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f6ff;
+            color: #26364a;
+        }
+
+        header {
+            background: #245b91;
+            color: white;
+            text-align: center;
+            padding: 35px 15px;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background: #163e68;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 12px;
+            gap: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 6px;
+        }
+
+        nav a:hover {
+            background: #438ac7;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 35px auto;
+            padding: 0 18px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #245b91;
+            margin-bottom: 22px;
+        }
+
+        .intro {
+            text-align: center;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+        }
+
+        .project {
+            background: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px #ccd8e6;
+        }
+
+        .project h3 {
+            color: #245b91;
+            margin-bottom: 12px;
+        }
+
+        .project a {
+            display: inline-block;
+            background: #347fbd;
+            color: white;
+            text-decoration: none;
+            padding: 10px 18px;
+            border-radius: 6px;
+        }
+
+        .project a:hover {
+            background: #163e68;
+        }
+
+        .lantern {
+            text-align: center;
+            margin-top: 35px;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        .lantern a {
+            display: inline-block;
+            background: #e68a32;
+            color: white;
+            text-decoration: none;
+            padding: 13px 25px;
+            border-radius: 7px;
+            margin-top: 15px;
+        }
+
+        footer {
+            margin-top: 40px;
+            background: #163e68;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>WEBSITE HỌC TẬP CÁ NHÂN</h1>
+    <p>Họ và tên: Trúc Quỳnh</p>
+    <p>Mã số sinh viên: 241A010460</p>
+    <p>Môn học: Lập trình Web</p>
+</header>
+
+<nav>
+    <a href="#home">Trang chủ</a>
+    <a href="#projects">Bài tập 17 - 22</a>
+    <a href="denquanquan.html">Đèn kéo quân</a>
+</nav>
+
+<main id="home">
+
+    <section class="intro">
+        <h2>Xin chào!</h2>
+        <p>
+            Chào mừng đến với website học tập cá nhân của tôi.
+            Đây là nơi tổng hợp các bài thực hành môn Lập trình Web,
+            từ Domain, Hosting đến các hiệu ứng JavaScript.
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>CÁC BÀI TẬP ĐÃ THỰC HIỆN</h2>
+
+        <div class="projects">
+
+            <div class="project">
+                <h3>Bài tập 17</h3>
+                <p>Domain và DNS</p>
+                <a href="https://docs.google.com/document/d/1iVB6Lav-0-37FYjY_rI6zp2K2aFDJM_e4EwHzc8pg8U/edit?pli=1&tab=t.0" target="_blank">Xem kết quả</a>
+            </div>
+
+            <div class="project">
+                <h3>Bài tập 18</h3>
+                <p>Upload website Hosting</p>
+                <a href="https://trquynh.infinityfree.me/CV.html" target="_blank">Xem kết quả</a>
+            </div>
+
+            <div class="project">
+                <h3>Bài tập 19</h3>
+                <p>Portfolio cá nhân</p>
+                <a href="https://ndtrquynh0408-art.github.io/my-portfolio/" target="_blank">Xem kết quả</a>
+            </div>
+
+            <div class="project">
+                <h3>Bài tập 20</h3>
+                <p>Trắc nghiệm chương 1, 2</p>
+                <a href="https://docs.google.com/document/d/1zC-MzjVseQyP0HvnbV8Md95f1iXN0idWSaBVHAS1NUM/edit?tab=t.0" target="_blank">Xem kết quả</a>
+            </div>
+
+            <div class="project">
+                <h3>Bài tập 21</h3>
+                <p>Public trên 4 nền tảng</p>
+                <a href="https://docs.google.com/document/d/1O_dy6yDdHvtFO7Uyi125RkwbuxFeaqCV3qVol9IKlsY/edit?tab=t.0" target="_blank">Xem kết quả</a>
+            </div>
+
+            <div class="project">
+                <h3>Bài tập 22</h3>
+                <p>Bài thực hành cá nhân</p>
+                <a href="https://bai22-bleb.netlify.app/" target="_blank">Xem kết quả</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="lantern">
+        <h2>BÀI TẬP 24 - ĐÈN KÉO QUÂN</h2>
+        <p>Khám phá hiệu ứng đèn kéo quân với 6 hình ảnh cá nhân.</p>
+        <a href="denkeoquan.html">Xem đèn kéo quân</a>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 - Website học tập cá nhân - Trúc Quỳnh</p>
+</footer>
+
+</body>
+</html>
